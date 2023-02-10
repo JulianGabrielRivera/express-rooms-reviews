@@ -1,0 +1,15 @@
+{{>eachRoom}}
+
+<button>Edit</button>
+<button>Delete</button>
+
+{{#if reviews}}
+<ul>
+{{#each reviews}}
+<li>Review</li>
+{{/each}}
+</ul>
+{{else}}
+<p>No reviews yet</p>
+
+{{/if}}
